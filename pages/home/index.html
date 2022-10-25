@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/margins.css" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="theme-color" content="#5f3dc4" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Variables Generate</title>
+    <meta name="description" content="Choose your color palette effectively and super easily generate your
+    css variables, as well as indicate your font size in pixels and
+    convert variables with translated sizes to rem, providing more
+    accessibility.">
+  </head>
+  <body>
+    <main class="settings">
+      <header class="settings-header">
+        <h1 class="font-1 medium grey-100">Design System Settings</h1>
+        <button class="bt bt-icon" aria-label="Close Settings">X</button>
+        <p class="font-2 regular grey-200">
+          Choose your color palette effectively and super easily generate your
+          css variables, as well as indicate your font size in pixels and
+          convert variables with translated sizes to rem, providing more
+          accessibility.
+        </p>
+      </header>
+      <form>
+        <fieldset class="settings-form-section">
+          <legend class="font-2 medium title-header grey-100">Colors</legend>
+          <div class="color-pallete">
+            <h4 class="font-2 medium grey-100">Brand</h4>
+            <div class="color-input-group">
+              <input id="brand-100" type="color" />
+              <label for="brand-100" class="grey-100">100</label>
+            </div>
+            <div class="color-input-group">
+              <input id="brand-200" type="color" />
+              <label for="brand-200" class="grey-100">200</label>
+            </div>
+            <div class="color-input-group">
+              <input id="brand-300" type="color" />
+              <label for="brand-300" class="grey-100">300</label>
+            </div>
+            <div class="color-input-group">
+              <input id="brand-400" type="color" />
+              <label for="brand-400" class="grey-100">400</label>
+            </div>
+          </div>
+          <div class="color-pallete">
+            <h4 class="font-2 medium grey-100">GrayScale</h4>
+            <div class="color-input-group">
+              <input id="grey-100" type="color" />
+              <label for="grey-100" class="grey-100">100</label>
+            </div>
+            <div class="color-input-group">
+              <input id="grey-200" type="color" />
+              <label for="grey-200" class="grey-100">200</label>
+            </div>
+            <div class="color-input-group">
+              <input id="grey-300" type="color" />
+              <label for="grey-300" class="grey-100">300</label>
+            </div>
+            <div class="color-input-group">
+              <input id="grey-400" type="color" />
+              <label for="grey-400" class="grey-100">400</label>
+            </div>
+          </div>
+          <div class="color-pallete">
+            <h4 class="font-2 medium grey-100">Feedback Pallete</h4>
+            <div class="color-input-group">
+              <input id="feedback-alert" type="color" />
+              <label for="feedback-alert" class="grey-100">alert</label>
+            </div>
+            <div class="color-input-group">
+              <input id="feedback-sucess" type="color" />
+              <label for="feedback-sucess" class="grey-100">sucess</label>
+            </div>
+            <div class="color-input-group">
+              <input id="feedback-warning" type="color" />
+              <label for="feedback-warning" class="grey-100">warning</label>
+            </div>
+            <div class="color-input-group">
+              <input id="feedback-disable" type="color" />
+              <label for="feedback-disable" class="grey-100">disable</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="settings-form-section">
+          <legend class="font-2 medium title-header grey-100 mb-2">
+            Typography Size
+          </legend>
+          <div class="container mb-2">
+            <div class="input-group">
+              <label for="fontScale">fontScale</label>
+              <input
+                id="fontScale"
+                type="text"
+                placeholder="Ex: 32, 28, 24, 20, 16"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <div class="action-buttons">
+          <button class="bt bt-outline button-copy-colors">Copy Styles</button>
+          <button class="bt button-save-colors">Save Styles</button>
+        </div>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
